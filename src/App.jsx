@@ -11,7 +11,8 @@ function App() {
     setLoading(true);
     setError("");
     try {
-      await signIn({ username, password });
+      const test = await signIn({ username, password });
+      console.log(test);
       alert("Login Successful");
     } catch (e) {
       console.log(e);
